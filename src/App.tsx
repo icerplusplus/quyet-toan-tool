@@ -1,21 +1,8 @@
-import React from "react";
-import "./App.css";
 import ExcelGenerator from "./components/ExcelGenerator";
-
-interface President {
-  Name: string;
-  Index: number;
-}
-
-
+import "./App.css";
 
 function App() {
-  
-  return (
-    <>
-      <ExcelGenerator />
-    </>
-  );
+  return <ExcelGenerator />;
 }
 
 export default App;
