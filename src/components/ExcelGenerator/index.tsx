@@ -1,8 +1,8 @@
-import React, { memo } from "react";
+import React from "react";
+import { Excel } from "../../libs/excel";
 import "./index.css";
-import { Excel, predefinedColumns } from "../../libs/excel";
 
-const ExcelGenerator = memo(() => {
+const ExcelGenerator = () => {
   const [data, setData] = React.useState<any[]>([]);
   const [columns, setColumns] = React.useState<string[]>([]);
 
@@ -17,10 +17,6 @@ const ExcelGenerator = memo(() => {
       setColumns
     );
   }, []);
-
-  const renderResults = () => {};
-
-  console.log({ data, columns });
 
   return (
     <div>
@@ -97,6 +93,6 @@ const ExcelGenerator = memo(() => {
       </table>
     </div>
   );
-});
+};
 
 export default ExcelGenerator;

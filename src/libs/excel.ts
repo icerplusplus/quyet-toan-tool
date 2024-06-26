@@ -67,7 +67,7 @@ export const Excel = {
 
       // Get the first worksheet
       const worksheetName = workbook.SheetNames[0];
-      const worksheet = workbook.Sheets[worksheetName];
+      // const worksheet = workbook.Sheets[worksheetName];
 
       // Convert worksheet to JSON
       // const jsonData = Excel.convertWorksheetToJSON(worksheet)
